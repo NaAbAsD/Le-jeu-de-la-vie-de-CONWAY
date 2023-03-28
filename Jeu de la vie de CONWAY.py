@@ -315,7 +315,7 @@ debut = Button(root, text="Démarrer", command=demarrer, font=font.Font(family=f
 # Bouton pour mettre en pause
 pose = Button(root, text="Pause", command=pause, font=font.Font(family=fontName))
 
-#Bouton pour quitter
+# Bouton pour quitter
 quitButton = Button(root, text="Quitter", command=quit, font=font.Font(family=fontName))
 
 # Bouton pour sauvegarder
