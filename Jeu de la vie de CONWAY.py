@@ -281,6 +281,8 @@ def load():
                 nouvelleGrille("charge", listeGrilleTemp) # Création de la nouvelle grille
                 compteur(listeGrille) # Mise à jour du compteur de cellules vivantes
 
+def quit():
+    root.destroy()
 
 ### Definition des labels et boutons, a mettre a jour avec les variables ###
 # Nombre de jours
@@ -313,6 +315,9 @@ debut = Button(root, text="Démarrer", command=demarrer, font=font.Font(family=f
 # Bouton pour mettre en pause
 pose = Button(root, text="Pause", command=pause, font=font.Font(family=fontName))
 
+# Bouton pour quitter
+quitButton = Button(root, text="Quitter", command=quit, font=font.Font(family=fontName))
+
 # Bouton pour sauvegarder
 sauvegarder = Button(root, text="Sauvegarder", command=save, font=font.Font(family=fontName))
 
@@ -336,6 +341,7 @@ charger.grid(row=2, rowspan=3, column=0)
 sauvegarder.grid(row=2, rowspan = 3, column=1)
 debut.grid(row=2, column=2)
 pose.grid(row=3, column=2)
+quitButton.grid(row=1, column=4)
 
 root.attributes("-fullscreen", True) # Met un plein écran sur le programme
 
